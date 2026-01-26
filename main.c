@@ -32,7 +32,16 @@ uint8_t invert(uint8_t x) {
     return gpow(x, 254);
 }
 
+uint8_t affine(uint8_t b) {
+    uint8_t res = 0;
+    for (int i = 0; i < 8; i++) {
+        uint8_t bit = (b ^ (b >> 4) ^ (b >> 5) ^ (b >> 6) ^ (b >> 4)) & 1
+    }
+}
+
 int main() {
     uint8_t byte = 0x53;
-    
+    unit8_t inv = invert(byte);
+
+    uint8_t
 }
