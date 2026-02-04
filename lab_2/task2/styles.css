@@ -1,0 +1,186 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+body {
+	background: #fafafa;
+	min-height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 20px;
+}
+
+.container {
+	display: flex;
+	gap: 30px;
+	align-items: center;
+	max-width: 950px;
+}
+
+.mockup-section {
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 20px;
+}
+
+.instagram-logo {
+	width: 50px;
+	height: 50px;
+}
+
+.tagline {
+	text-align: center;
+	font-size: 18px;
+	color: #262626;
+	line-height: 1.4;
+}
+
+.tagline span {
+	color: #0095f6;
+}
+
+.mockup-img {
+	max-width: 100%;
+	height: auto;
+}
+
+.login-section {
+	width: 350px;
+}
+
+.login-box {
+	background: white;
+	border: 1px solid #dbdbdb;
+	border-radius: 4px;
+	padding: 40px;
+	text-align: center;
+}
+
+.login-title {
+	font-size: 16px;
+	color: #262626;
+	margin-bottom: 20px;
+}
+
+.input-field {
+	width: 100%;
+	padding: 12px 10px;
+	border: 1px solid #dbdbdb;
+	border-radius: 4px;
+	background: #fafafa;
+	font-size: 14px;
+	margin-bottom: 8px;
+	outline: none;
+}
+
+.input-field:focus {
+	border-color: #a8a8a8;
+}
+
+.login-btn {
+	width: 100%;
+	padding: 12px;
+	background: #0095f6;
+	border: none;
+	border-radius: 8px;
+	color: white;
+	font-size: 14px;
+	font-weight: 600;
+	cursor: pointer;
+	margin-top: 10px;
+	opacity: 0.7;
+}
+
+.login-btn:hover {
+	opacity: 1;
+}
+
+.forgot-password {
+	margin-top: 20px;
+}
+
+.forgot-password a {
+	color: #00376b;
+	font-size: 12px;
+	text-decoration: none;
+}
+
+.separator {
+	display: flex;
+	align-items: center;
+	margin: 20px 0;
+}
+
+.separator::before,
+.separator::after {
+	content: "";
+	flex: 1;
+	height: 1px;
+	background: #dbdbdb;
+}
+
+.separator span {
+	padding: 0 18px;
+	color: #8e8e8e;
+	font-size: 13px;
+	font-weight: 600;
+}
+
+.facebook-btn {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 8px;
+	width: 100%;
+	padding: 12px;
+	background: white;
+	border: 1px solid #dbdbdb;
+	border-radius: 8px;
+	color: #385898;
+	font-size: 14px;
+	font-weight: 600;
+	cursor: pointer;
+}
+
+.facebook-icon {
+	width: 20px;
+	height: 20px;
+	background: #385898;
+	border-radius: 50%;
+	color: white;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-weight: bold;
+	font-size: 12px;
+}
+
+.signup-box {
+	background: white;
+	border: 1px solid #dbdbdb;
+	border-radius: 4px;
+	padding: 20px;
+	text-align: center;
+	margin-top: 10px;
+}
+
+.signup-box a {
+	color: #0095f6;
+	text-decoration: none;
+	font-weight: 600;
+}
+
+@media (max-width: 800px) {
+	.container {
+		flex-direction: column;
+	}
+	.mockup-section {
+		display: none;
+	}
+}

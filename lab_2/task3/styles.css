@@ -1,0 +1,167 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f6f8fa;
+  color: #1f2328;
+}
+
+.hero {
+  text-align: center;
+  padding: 60px 20px 40px;
+  background: #fff;
+}
+
+.hero h1 {
+  font-size: 36px;
+  margin-bottom: 16px;
+}
+
+.hero p {
+  font-size: 16px;
+  color: #656d76;
+  max-width: 600px;
+  margin: 0 auto 24px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 12px 24px;
+  font-size: 14px;
+  border-radius: 6px;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-primary {
+  background: #1f2328;
+  color: #fff;
+}
+
+.btn-outline {
+  background: #fff;
+  color: #1f2328;
+  border: 1px solid #d0d7de;
+}
+
+.pricing-section {
+  padding: 40px 20px 60px;
+}
+
+.pricing-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.pricing-card {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+  overflow: hidden;
+}
+
+.pricing-card.recommended {
+  border: 2px solid #1f2328;
+}
+
+.recommended-badge {
+  background: #1f2328;
+  color: #fff;
+  text-align: center;
+  padding: 6px;
+  font-size: 11px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.card-header {
+  padding: 24px 20px;
+  text-align: center;
+}
+
+.card-header h2 {
+  font-size: 22px;
+  margin-bottom: 8px;
+}
+
+.card-header .description {
+  font-size: 14px;
+  color: #656d76;
+}
+
+.price {
+  margin: 12px 0;
+  text-align: center;
+}
+
+.price .amount {
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.price .unit,
+.price .period {
+  font-size: 14px;
+  color: #656d76;
+}
+
+.card-cta {
+  padding: 0 20px 20px;
+  text-align: center;
+}
+
+.card-cta .btn {
+  width: 100%;
+}
+
+.cta-row {
+  display: flex;
+  gap: 8px;
+}
+
+.cta-row .btn {
+  flex: 1;
+}
+
+.card-features {
+  background: #f6f8fa;
+  padding: 16px 20px;
+}
+
+.features-intro {
+  font-size: 13px;
+  margin-bottom: 12px;
+  color: #656d76;
+}
+
+.feature-list {
+  list-style: none;
+}
+
+.feature-item {
+  padding: 6px 0;
+  font-size: 13px;
+  color: #656d76;
+}
+
+.feature-item:before {
+  content: ">";
+  margin-right: 8px;
+}
+
+.features-heading {
+  font-size: 11px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #0969da;
+  margin-top: 16px;
+  margin-bottom: 8px;
+}

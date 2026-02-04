@@ -1,0 +1,149 @@
+* {
+    font-family: SFProDisplay-Regular, Helvetica, Arial, sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #f0f2f5;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 112px;
+    padding-top: 72px;
+    gap: 80px;
+}
+
+.text {
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 32px;
+    width: 500px;
+}
+
+#f-img {
+    height: 106px;
+    margin: -28px;
+}
+
+form {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 8px 16px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 396px;
+}
+
+form input {
+    width: 100%;
+    padding: 14px 16px;
+    font-size: 17px;
+    border: 1px solid #dddfe2;
+    border-radius: 6px;
+    margin-bottom: 12px;
+    outline: none;
+}
+
+form input:focus {
+    border-color: #1877f2;
+    box-shadow: 0 0 0 2px #e7f3ff;
+}
+
+form input::placeholder {
+    color: #8a8d91;
+}
+
+#login-btn {
+    width: 100%;
+    background-color: #1877f2;
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-top: 6px;
+}
+
+#login-btn:hover {
+    background-color: #166fe5;
+}
+
+#fogot-link {
+    color: #1877f2;
+    font-size: 14px;
+    text-decoration: none;
+    margin-top: 16px;
+    margin-bottom: 20px;
+}
+
+#fogot-link:hover {
+    text-decoration: underline;
+}
+
+#singup-bnt {
+    background-color: #42b72a;
+    color: #ffffff;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 6px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#singup-bnt:hover {
+    background-color: #36a420;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.create-page {
+    font-size: 14px;
+    color: #1c1e21;
+    margin-top: 28px;
+    text-align: center;
+}
+
+.create-page a {
+    color: #1c1e21;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.create-page a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    main {
+        flex-direction: column;
+        padding: 20px;
+        gap: 24px;
+    }
+
+    main > div:first-child {
+        text-align: center;
+    }
+
+    .text {
+        width: auto;
+        font-size: 20px;
+        line-height: 26px;
+    }
+
+    form {
+        width: 100%;
+    }
+}
