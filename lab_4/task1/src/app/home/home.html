@@ -1,0 +1,17 @@
+<section>
+  <div class="search-container">
+    <label>
+      Filter by city
+      <input #filter type="text" placeholder="e.g. Chicago" />
+    </label>
+    <button (click)="filterResults(filter.value)">Search</button>
+  </div>
+  <div class="results">
+    @for (housingLocation of filteredLocationList; track housingLocation.id) {
+      <app-housing-location [housingLocation]="housingLocation"></app-housing-location>
+    }
+    @if (filteredLocationList.length === 0) {
+      <p>No housing locations found.</p>
+    }
+  </div>
+</section>

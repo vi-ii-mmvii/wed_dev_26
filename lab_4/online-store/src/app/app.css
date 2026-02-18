@@ -1,0 +1,37 @@
+.site-header {
+  background: linear-gradient(135deg, #ef4444 0%, #dc2626 100%);
+  color: #ffffff;
+  padding: 32px 24px;
+  text-align: center;
+}
+
+.header-inner {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.site-title {
+  font-size: 2rem;
+  font-weight: 800;
+  margin: 0 0 6px;
+  letter-spacing: -0.5px;
+}
+
+.site-subtitle {
+  font-size: 1rem;
+  opacity: 0.9;
+  margin: 0;
+}
+
+main {
+  min-height: 70vh;
+  background: #f3f4f6;
+}
+
+.site-footer {
+  background: #1f2937;
+  color: #9ca3af;
+  text-align: center;
+  padding: 20px;
+  font-size: 0.875rem;
+}
