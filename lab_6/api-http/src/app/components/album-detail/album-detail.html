@@ -1,0 +1,29 @@
+<div class="detail">
+  @if (loading()) {
+    <div class="loading">Loading album...</div>
+  }
+
+  @if (album(); as album) {
+    <h1>Album Details</h1>
+
+    <div class="info">
+      <p><strong>ID:</strong> {{ album.id }}</p>
+      <p><strong>User ID:</strong> {{ album.userId }}</p>
+      <p><strong>Title:</strong> {{ album.title }}</p>
+    </div>
+
+    <div class="edit-section">
+      <label for="title">Edit Title:</label>
+      <input id="title" type="text" [(ngModel)]="editTitle" />
+      <button class="save-btn" (click)="saveTitle()">Save</button>
+      @if (saved()) {
+        <span class="saved-msg">Saved!</span>
+      }
+    </div>
+
+    <div class="actions">
+      <a [routerLink]="['/albums', album.id, 'photos']" class="photos-btn">View Photos</a>
+      <a routerLink="/albums" class="back-btn">Back to Albums</a>
+    </div>
+  }
+</div>

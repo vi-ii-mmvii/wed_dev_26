@@ -1,0 +1,103 @@
+.detail {
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+.loading {
+  text-align: center;
+  padding: 2rem;
+  color: #888;
+}
+
+.detail h1 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  color: #1a1a2e;
+}
+
+.info {
+  background: #f8f9fa;
+  padding: 1rem 1.5rem;
+  border-radius: 8px;
+  margin-bottom: 1.5rem;
+}
+
+.info p {
+  margin: 0.4rem 0;
+  color: #444;
+}
+
+.edit-section {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.edit-section label {
+  font-weight: 600;
+  color: #333;
+}
+
+.edit-section input {
+  flex: 1;
+  min-width: 200px;
+  padding: 0.5rem 0.75rem;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+.save-btn {
+  padding: 0.5rem 1.25rem;
+  background: #00b894;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.95rem;
+  transition: background 0.2s;
+}
+
+.save-btn:hover {
+  background: #00a383;
+}
+
+.saved-msg {
+  color: #00b894;
+  font-weight: 600;
+}
+
+.actions {
+  display: flex;
+  gap: 1rem;
+}
+
+.photos-btn,
+.back-btn {
+  padding: 0.5rem 1.25rem;
+  border-radius: 6px;
+  text-decoration: none;
+  font-size: 0.95rem;
+  transition: background 0.2s;
+}
+
+.photos-btn {
+  background: #6c5ce7;
+  color: #fff;
+}
+
+.photos-btn:hover {
+  background: #5a4bd1;
+}
+
+.back-btn {
+  background: #dfe6e9;
+  color: #333;
+}
+
+.back-btn:hover {
+  background: #cfd8dc;
+}
