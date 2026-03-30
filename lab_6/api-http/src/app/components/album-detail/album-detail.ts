@@ -1,12 +1,14 @@
 import { Component, OnInit, signal } from '@angular/core';
-import { ActivatedRoute, RouterLink } from '@angular/router';
+import {ActivatedRoute, Router, RouterLink} from '@angular/router';
 import { FormsModule } from '@angular/forms';
+import {CommonModule} from '@angular/common';
 import { AlbumService } from '../../services/album';
 import { Album } from '../../models/album';
 
 @Component({
   selector: 'app-album-detail',
-  imports: [RouterLink, FormsModule],
+  standalone: true,
+  imports: [CommonModule,RouterLink, FormsModule],
   templateUrl: './album-detail.html',
   styleUrl: './album-detail.css'
 })
@@ -22,7 +24,7 @@ export class AlbumDetail implements OnInit {
   ) {}
 
   ngOnInit(): void {
-    const id = Number(this.route.snapshot.paramMap.get('id'));
+    const id = Number(this.route.snapshot.paramMap.get('id')??'0');
     this.albumService.getAlbum(id).subscribe({
       next: (album) => {
         this.album.set(album);
